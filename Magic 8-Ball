@@ -1,8 +1,8 @@
 import random
 
-name = "Elsa"
+name = ""
 
-question = "Will 2023 be a good year?"
+question = "Is 2023 going to be a good year?"
 
 answer = ""
 
@@ -30,5 +30,8 @@ elif random_number == 9:
 else:
   answer = "Error"
 
-print(name + " asks: " + question)
-print("Magic 8-Ball's answer: " + answer)
+if question == "":
+  print("Error - no question asked!")
+else:
+  print(name + " asks: " + question)
+  print("Magic 8-Ball's answer: " + answer)
